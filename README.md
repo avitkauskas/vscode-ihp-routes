@@ -17,7 +17,7 @@ Highlights the following elements:
 ## Example
 
 ```haskell
-[noutes|webRoutes
+[routes|webRoutes
 GET    /Posts              PostsAction
 GET    /NewPost            NewPostAction
 POST   /CreatePost         CreatePostAction
