@@ -1,0 +1,46 @@
+{
+  "name": "ihp-routes-quasi",
+  "displayName": "IHP Routes Syntax Highlighting",
+  "description": "Syntax highlighting for IHP web framework [routes| ... |] quasi quotes",
+  "version": "0.1.0",
+  "publisher": "avitkauskas",
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avitkauskas/vscode-ihp-routes"
+  },
+  "keywords": [
+    "haskell",
+    "ihp",
+    "routes",
+    "syntax-highlighting"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "activationEvents": [
+    "onLanguage:haskell"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.haskell"
+        ],
+        "scopeName": "inline.ihp-routes",
+        "path": "./syntaxes/ihp-routes.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.0.0"
+  }
+}
