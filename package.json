@@ -4,6 +4,7 @@
   "description": "Syntax highlighting for IHP web framework [routes| ... |] quasi quotes",
   "version": "0.1.0",
   "publisher": "avitkauskas",
+  "license": "MIT",
   "main": "./out/extension.js",
   "engines": {
     "vscode": "^1.75.0"
