@@ -1,6 +1,6 @@
 {
   "name": "ihp-routes-quasi",
-  "displayName": "IHP Routes Syntax Highlighting",
+  "displayName": "IHP Routes QuasiQuoter Syntax Highlighting",
   "description": "Syntax highlighting for IHP web framework [routes| ... |] quasi quotes",
   "version": "0.1.0",
   "publisher": "avitkauskas",
