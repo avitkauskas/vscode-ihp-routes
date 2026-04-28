@@ -18,11 +18,13 @@ Highlights the following elements:
 
 ```haskell
 [routes|webRoutes
-GET    /Posts              PostsAction
-GET    /NewPost            NewPostAction
-POST   /CreatePost         CreatePostAction
-GET    /ShowPost?postId    ShowPostAction
-GET    /EditPost?postId    EditPostAction { postId = #id }
+GET    /posts?search           PostsAction { searchFilter = #search }
+GET    /posts/new              NewPostAction
+POST   /posts                  CreatePostAction
+GET    /posts/{postId}         ShowPostAction
+GET    /posts/{postId}/edit    EditPostAction
+PATCH  /posts/{postId}         UpdatePostAction
+DELETE /posts/{postId}         DeletePostAction
 |]
 ```
 
